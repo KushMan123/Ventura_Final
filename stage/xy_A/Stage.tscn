@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://stage/xy_A/Stage.gd" type="Script" id=1]
 [ext_resource path="res://XY_A_Tilest/tileset asset/Stone_ light (1).png" type="Texture" id=2]
@@ -36,6 +36,7 @@
 [ext_resource path="res://Character/Enemy/enemAI_XY_A.tscn" type="PackedScene" id=34]
 [ext_resource path="res://XY_A_TO_STAGE3/Stage3.tscn" type="PackedScene" id=35]
 [ext_resource path="res://Particles/leavf_particle.tscn" type="PackedScene" id=36]
+[ext_resource path="res://XY_A_Opening/Welcomedoor.tscn" type="PackedScene" id=37]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 3, 46.75, 33, 31.75, 35, 1.75, 109, 1.75, 119, 31.75, 135, 42.75, 154, 43.75, 155, 66.75, 7, 71.75 )
@@ -395,6 +396,9 @@ points = PoolVector2Array( 0, 0, 79, 0, 79, 101, 0, 101 )
 0/navigation_offset = Vector2( 0, 0 )
 0/shapes = [  ]
 0/z_index = 0
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 718.248
 
 [node name="Stage" type="Node2D"]
 modulate = Color( 1, 0.517647, 0.517647, 1 )
@@ -801,7 +805,7 @@ modulate = Color( 1, 0.517647, 0.517647, 1 )
 position = Vector2( 4965.85, 148.422 )
 
 [node name="Player_xy_1" parent="." instance=ExtResource( 19 )]
-position = Vector2( 25203.1, -2882.83 )
+position = Vector2( 913.534, 1451.32 )
 scale = Vector2( 2.5, 2.5 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player_xy_1"]
@@ -1379,35 +1383,60 @@ position = Vector2( 6318.69, 235.85 )
 scale = Vector2( 0.5, 0.4 )
 
 [node name="RotatingGroupTrap3" parent="." instance=ExtResource( 23 )]
+modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 15378.7, -1595.79 )
 scale = Vector2( 2.3, 2.5 )
 
 [node name="RotatingGroupTrap7" parent="." instance=ExtResource( 23 )]
+modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 16476.3, -1792.37 )
 scale = Vector2( 2.3, 2.5 )
 
 [node name="RotatingGroupTrap4" parent="." instance=ExtResource( 23 )]
+modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 14275.9, -1690.61 )
 scale = Vector2( 2.5, 2.3 )
 
 [node name="RotatingGroupTrap5" parent="." instance=ExtResource( 23 )]
-position = Vector2( 13117, -1683.74 )
-scale = Vector2( 2.6, 2.5 )
+modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
+position = Vector2( 13016.6, -1762.66 )
+scale = Vector2( 3, 2.5 )
 
 [node name="RotatingGroupTrap6" parent="." instance=ExtResource( 23 )]
-position = Vector2( 10078, -1807.96 )
+position = Vector2( 10162.6, -1488.25 )
+scale = Vector2( 3, 3 )
+rotationalTime = 4.0
 
 [node name="Movingplatform3" parent="." instance=ExtResource( 30 )]
-position = Vector2( 11328.8, -1695.32 )
+modulate = Color( 0.278431, 0.105882, 0.901961, 1 )
+position = Vector2( 9745.85, -1163.11 )
+scale = Vector2( 2.5, 1.6 )
+move_to = Vector2( 0, 0 )
 
 [node name="Movingplatform4" parent="." instance=ExtResource( 30 )]
-position = Vector2( 9217.54, -1771.75 )
+modulate = Color( 0.835294, 0.0588235, 0.768627, 1 )
+position = Vector2( 9344.99, -1229.03 )
+scale = Vector2( 1.8, 1 )
+
+[node name="Movingplatform11" parent="." instance=ExtResource( 30 )]
+modulate = Color( 0.835294, 0.0588235, 0.768627, 1 )
+position = Vector2( 8975.89, -1347.96 )
+scale = Vector2( 1.8, 1 )
+move_to = Vector2( 0, 0 )
+
+[node name="Movingplatform12" parent="." instance=ExtResource( 30 )]
+modulate = Color( 0.835294, 0.0588235, 0.768627, 1 )
+position = Vector2( 8805.69, -1477.15 )
+move_to = Vector2( 0, 0 )
 
 [node name="Movingplatform5" parent="." instance=ExtResource( 30 )]
-position = Vector2( 12570.8, -1848.18 )
+modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
+position = Vector2( 12523.1, -1463.82 )
+scale = Vector2( 2, 3 )
+move_to = Vector2( -500, 0 )
 
 [node name="Movingplatform6" parent="." instance=ExtResource( 30 )]
-position = Vector2( 8394.87, -1692.83 )
+position = Vector2( 8155.15, -1734.08 )
 
 [node name="Moving platform8" parent="." instance=ExtResource( 10 )]
 position = Vector2( 19147.9, -3188.83 )
@@ -1496,7 +1525,7 @@ position = Vector2( 17675.9, 314.562 )
 scale = Vector2( 3, 1 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 36 )]
-modulate = Color( 0.0509804, 0.572549, 0.992157, 1 )
+modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 16353.1, -1922.2 )
 scale = Vector2( 3, 1 )
 
@@ -1509,6 +1538,19 @@ scale = Vector2( 3, 1 )
 modulate = Color( 0.0509804, 0.572549, 0.992157, 1 )
 position = Vector2( 19744.3, -1850.05 )
 scale = Vector2( 3, 1 )
+
+[node name="Area_collection" type="Node2D" parent="."]
+
+[node name="Area1" type="Area2D" parent="Area_collection"]
+position = Vector2( 11262, -3147 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_collection/Area1"]
+position = Vector2( -10724.1, 4336.8 )
+shape = SubResource( 10 )
+
+[node name="Welcomedoor" parent="." instance=ExtResource( 37 )]
+position = Vector2( 318.376, 1113.18 )
+scale = Vector2( 3, 4 )
 [connection signal="In_door_area" from="door" to="." method="_on_door_In_door_area"]
 [connection signal="key_found" from="key" to="." method="_on_key_key_found"]
 [connection signal="treasure_found" from="Treasurefound" to="." method="_on_Treasurefound_treasure_found"]

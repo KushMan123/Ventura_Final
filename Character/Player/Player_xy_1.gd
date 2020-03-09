@@ -21,6 +21,7 @@ onready var health = max_health setget _set_health
 onready var invulnerability_timer =Timer
 onready var hp_bar=get_node("HealthBar")
 onready var tween=get_node("HealthBar/Tween")
+onready var dialog = $CanvasLayer/DialogBox
 
 
 var hppercent=null
@@ -203,3 +204,15 @@ func HPBarUpdate():
 		else:
 			hp_bar.set_tint_progress("e11e1e")
 			
+
+
+
+func _on_Area2D_area_entered(area):
+	if area.name == "Area1":
+		dialog.set_visible(true)
+		dialog.get_node("Text").set_bbcode(dialog.xy_1[0])
+		dialog.get_node("Text").set_visible_characters(0)
+
+
+func _on_Area2D_area_exited(area):
+	dialog.set_visible(false)

@@ -42,3 +42,5 @@ func _on_Area2D_player_entered(area: Area2D) -> void:
 	for i in range(0, enemy_spawnin_node.get_child_count()):
 		print(enemy_spawnin_node.get_child(i).name)
 		enemy_spawnin_node.get_child(i).set_visible(true);
+
+
