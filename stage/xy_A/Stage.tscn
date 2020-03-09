@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://stage/xy_A/Stage.gd" type="Script" id=1]
 [ext_resource path="res://XY_A_Tilest/tileset asset/Stone_ light (1).png" type="Texture" id=2]
@@ -400,6 +400,9 @@ points = PoolVector2Array( 0, 0, 79, 0, 79, 101, 0, 101 )
 [sub_resource type="CircleShape2D" id=10]
 radius = 718.248
 
+[sub_resource type="CircleShape2D" id=11]
+radius = 1.98429
+
 [node name="Stage" type="Node2D"]
 modulate = Color( 1, 0.517647, 0.517647, 1 )
 position = Vector2( 1.63022, 1.84712 )
@@ -549,15 +552,15 @@ modulate = Color( 1, 0.517647, 0.517647, 1 )
 position = Vector2( 1769.53, 432.858 )
 
 [node name="PowerUP" parent="." instance=ExtResource( 15 )]
-position = Vector2( 4563.58, -1806.33 )
+position = Vector2( 6815.16, -847.619 )
 scale = Vector2( 5, 5 )
 
 [node name="door" parent="." instance=ExtResource( 16 )]
 position = Vector2( 9306.58, 1561.88 )
 
 [node name="key" parent="." instance=ExtResource( 14 )]
-position = Vector2( 5368.58, -2346.11 )
-scale = Vector2( 3, 3 )
+position = Vector2( 5345.29, -2266.91 )
+scale = Vector2( 5, 5 )
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 layer = -2
@@ -844,7 +847,7 @@ speed = 7.0
 
 [node name="Treasurefound" parent="." instance=ExtResource( 25 )]
 modulate = Color( 0.945098, 0.929412, 0.0117647, 1 )
-position = Vector2( 8339.57, -784.059 )
+position = Vector2( 8483.77, -769.639 )
 scale = Vector2( 2.5, 2.5 )
 
 [node name="KinematicBody2D3" parent="." instance=ExtResource( 9 )]
@@ -1026,7 +1029,12 @@ scale = Vector2( 5, 3 )
 move_to = Vector2( -280, 0 )
 
 [node name="Moving platform7" parent="." instance=ExtResource( 10 )]
-position = Vector2( 5480.14, -1916.92 )
+position = Vector2( 5227.41, -1893.25 )
+scale = Vector2( 5, 3 )
+move_to = Vector2( 0, 0 )
+
+[node name="Moving platform10" parent="." instance=ExtResource( 10 )]
+position = Vector2( 5428.89, -2024.08 )
 scale = Vector2( 5, 3 )
 move_to = Vector2( -360, 0 )
 
@@ -1547,6 +1555,33 @@ position = Vector2( 11262, -3147 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area_collection/Area1"]
 position = Vector2( -10724.1, 4336.8 )
 shape = SubResource( 10 )
+
+[node name="Area2" type="Area2D" parent="Area_collection"]
+scale = Vector2( 10, 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_collection/Area2"]
+modulate = Color( 0.239216, 0.941176, 0.0392157, 1 )
+position = Vector2( 531.498, -226.867 )
+scale = Vector2( 10, 10 )
+shape = SubResource( 11 )
+
+[node name="Area3" type="Area2D" parent="Area_collection"]
+scale = Vector2( 10, 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_collection/Area3"]
+modulate = Color( 0.239216, 0.941176, 0.0392157, 1 )
+position = Vector2( 847.017, -81.9447 )
+scale = Vector2( 10, 10 )
+shape = SubResource( 11 )
+
+[node name="Area4" type="Area2D" parent="Area_collection"]
+scale = Vector2( 10, 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_collection/Area4"]
+modulate = Color( 0.239216, 0.941176, 0.0392157, 1 )
+position = Vector2( 679.383, -93.8414 )
+scale = Vector2( 10, 10 )
+shape = SubResource( 11 )
 
 [node name="Welcomedoor" parent="." instance=ExtResource( 37 )]
 position = Vector2( 318.376, 1113.18 )

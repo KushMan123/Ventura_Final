@@ -7,7 +7,7 @@ var dialog_character_4 = ["Hello child!!! I am the greatest wizard this world ha
 var dialog_character_5 = ["You are not allowed to go through. Beyond here is very dangerous."]
 var NPC_dialog = ["Hi! I am a musician. Would you like to listen to my guitar?... NO? It's okay I dont force people.", "I dont think this is where I was suppose to come.", "sssshhh. If you focus on your hearing you can listen to the noise of a waterfall.", "I came here to party. Let's rock !", "I like dogs. You're not a dog. Get out fo my sight.'"]
 var magical_item = ["This must be what that wizard wants. My work has paid off."]
-var xy_1 = ["Welcome to this mysterious magical world. Something in golden colour must be useful to you.", "You found the key 1 to unlock the door no. 1","Door 1 is open.", "You found key 2.", "Door 2 is open.", "You found the treasure. Fire a bullet to unlock it.", "Hidden wall appeared."]
+var xy_1 = ["Welcome to this mysterious magical world. Something in golden colour must be useful to you.","Your power is now  upgraded", "You found the key 1 to unlock the door no. 1","Door 1 is open.", "You found key 2.", "Door 2 is open.", "You found the treasure. Fire a bullet to unlock it.", "Hidden wall appeared.","This is magical Platform"]
 var page = 0
 var screensize
 

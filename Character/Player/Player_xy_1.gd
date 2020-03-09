@@ -212,6 +212,11 @@ func _on_Area2D_area_entered(area):
 		dialog.set_visible(true)
 		dialog.get_node("Text").set_bbcode(dialog.xy_1[0])
 		dialog.get_node("Text").set_visible_characters(0)
+	
+	if area.name == "Area2":
+		dialog.set_visible(true)
+		dialog.get_node("Text").set_bbcode(dialog.xy_[2])
+		dialog.get_node("Text").set_visible_characters(0)
 
 
 func _on_Area2D_area_exited(area):
