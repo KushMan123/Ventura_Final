@@ -16,27 +16,27 @@
 [ext_resource path="res://object/XY_A_doorAndKey/key.tscn" type="PackedScene" id=14]
 [ext_resource path="res://XY_A_PowerUp/PowerUP.tscn" type="PackedScene" id=15]
 [ext_resource path="res://object/XY_A_doorAndKey/door.tscn" type="PackedScene" id=16]
-[ext_resource path="res://Background_XY_A/background.png" type="Texture" id=17]
-[ext_resource path="res://Character/Enemy/Enemy_xy_A_FollowsU.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Character/Player/Player_xy_1.tscn" type="PackedScene" id=19]
-[ext_resource path="res://Audio and sound effects/Arriving somewhere but not here.ogg" type="AudioStream" id=20]
-[ext_resource path="res://Character/Enemy/enemy_xy_A1.tscn" type="PackedScene" id=21]
-[ext_resource path="res://Character/Enemy/enemy_xy_A_Ray.tscn" type="PackedScene" id=22]
-[ext_resource path="res://object/obstracle_xy_A/RotatingGroupTrap.tscn" type="PackedScene" id=23]
-[ext_resource path="res://XY_2_scenes/Rotating platform.tscn" type="PackedScene" id=24]
-[ext_resource path="res://object/Treasure/Treasurefound.tscn" type="PackedScene" id=25]
-[ext_resource path="res://XY_A_water/water_flowing_XY_A.gd" type="Script" id=26]
-[ext_resource path="res://illusionspike/Illusion.tscn" type="PackedScene" id=27]
-[ext_resource path="res://object/XY_A_doorAndKey/door2.tscn" type="PackedScene" id=28]
-[ext_resource path="res://object/XY_A_doorAndKey/key2.tscn" type="PackedScene" id=29]
-[ext_resource path="res://object/obstracle_xy_A/Movingplatform.tscn" type="PackedScene" id=30]
-[ext_resource path="res://object/obstracle_xy_A/fancymovingandrotating.tscn" type="PackedScene" id=31]
-[ext_resource path="res://XY_A_Size_change_Trap/SizeChangeTrap.tscn" type="PackedScene" id=32]
-[ext_resource path="res://XY_A_item/Itemfound.tscn" type="PackedScene" id=33]
-[ext_resource path="res://Character/Enemy/enemAI_XY_A.tscn" type="PackedScene" id=34]
-[ext_resource path="res://XY_A_TO_STAGE3/Stage3.tscn" type="PackedScene" id=35]
-[ext_resource path="res://Particles/leavf_particle.tscn" type="PackedScene" id=36]
-[ext_resource path="res://XY_A_Opening/Welcomedoor.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Character/Enemy/Enemy_xy_A_FollowsU.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Character/Player/Player_xy_1.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Audio and sound effects/Arriving somewhere but not here.ogg" type="AudioStream" id=19]
+[ext_resource path="res://Character/Enemy/enemy_xy_A1.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Character/Enemy/enemy_xy_A_Ray.tscn" type="PackedScene" id=21]
+[ext_resource path="res://object/obstracle_xy_A/RotatingGroupTrap.tscn" type="PackedScene" id=22]
+[ext_resource path="res://XY_2_scenes/Rotating platform.tscn" type="PackedScene" id=23]
+[ext_resource path="res://object/Treasure/Treasurefound.tscn" type="PackedScene" id=24]
+[ext_resource path="res://XY_A_water/water_flowing_XY_A.gd" type="Script" id=25]
+[ext_resource path="res://illusionspike/Illusion.tscn" type="PackedScene" id=26]
+[ext_resource path="res://object/XY_A_doorAndKey/door2.tscn" type="PackedScene" id=27]
+[ext_resource path="res://object/XY_A_doorAndKey/key2.tscn" type="PackedScene" id=28]
+[ext_resource path="res://object/obstracle_xy_A/Movingplatform.tscn" type="PackedScene" id=29]
+[ext_resource path="res://object/obstracle_xy_A/fancymovingandrotating.tscn" type="PackedScene" id=30]
+[ext_resource path="res://XY_A_Size_change_Trap/SizeChangeTrap.tscn" type="PackedScene" id=31]
+[ext_resource path="res://XY_A_item/Itemfound.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Character/Enemy/enemAI_XY_A.tscn" type="PackedScene" id=33]
+[ext_resource path="res://XY_A_TO_STAGE3/Stage3.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Particles/leavf_particle.tscn" type="PackedScene" id=35]
+[ext_resource path="res://XY_A_Opening/Welcomedoor.tscn" type="PackedScene" id=36]
+[ext_resource path="res://assets/xy/layers_xy_2/background_image_project.png" type="Texture" id=37]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 3, 46.75, 33, 31.75, 35, 1.75, 109, 1.75, 119, 31.75, 135, 42.75, 154, 43.75, 155, 66.75, 7, 71.75 )
@@ -404,7 +404,7 @@ radius = 718.248
 radius = 1.98429
 
 [node name="Stage" type="Node2D"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
+modulate = Color( 0.917647, 0.831373, 0.831373, 1 )
 position = Vector2( 1.63022, 1.84712 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -562,280 +562,39 @@ position = Vector2( 9306.58, 1561.88 )
 position = Vector2( 5345.29, -2266.91 )
 scale = Vector2( 5, 5 )
 
-[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1018.48, 86.531 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground9" type="ParallaxBackground" parent="ParallaxBackground2/ParallaxLayer"]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground9"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1900, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground9/ParallaxLayer"]
-modulate = Color( 0.0784314, 0.654902, 0.933333, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 904.589, -4928.13 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground8" type="ParallaxBackground" parent="ParallaxBackground2/ParallaxLayer"]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground8"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground8/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 975.234, -4091.35 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground7" type="ParallaxBackground" parent="ParallaxBackground2/ParallaxLayer"]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground7"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground7/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 977.186, -3100.28 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground6" type="ParallaxBackground" parent="ParallaxBackground2/ParallaxLayer"]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground6"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground6/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 963.505, -2153.97 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground5" type="ParallaxBackground" parent="ParallaxBackground2/ParallaxLayer"]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground5"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground5/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 969.215, -2399.85 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground3" type="ParallaxBackground" parent="ParallaxBackground2/ParallaxLayer"]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground3"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground3/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1012.06, -1712.21 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground4" type="ParallaxBackground" parent="ParallaxBackground2/ParallaxLayer"]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground4"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground4/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1025.66, -804.102 )
-texture = ExtResource( 17 )
-
-[node name="Sprite2" type="Sprite" parent="ParallaxBackground2/ParallaxLayer/ParallaxBackground4/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( -2949.54, 1791.58 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1019.04, 1007.14 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground12" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground12"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground12/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( -2901.71, 807.473 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground3" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground3"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground3/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1028.86, 1854.06 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground4" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground4"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="ParallaxBackground5" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground5"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground5/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1004.31, 2797.78 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground6" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground6"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground6/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1015.68, 3098.42 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground7" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground7"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="ParallaxBackground8" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground8"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground8/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1017.14, 3882.52 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground9" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground9"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground9/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1018.7, 4196.42 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground10" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground10"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground10/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1016.62, 4460.56 )
-texture = ExtResource( 17 )
-
-[node name="ParallaxBackground11" type="ParallaxBackground" parent="."]
-layer = -2
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground11"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-motion_mirroring = Vector2( 1785, 0 )
-
-[node name="Sprite" type="Sprite" parent="ParallaxBackground11/ParallaxLayer"]
-modulate = Color( 1, 0.517647, 0.517647, 1 )
-self_modulate = Color( 0.941176, 0.847059, 0.847059, 1 )
-position = Vector2( 1035.04, 5126.93 )
-texture = ExtResource( 17 )
-
-[node name="EnemyFollowsU2" parent="." instance=ExtResource( 18 )]
+[node name="EnemyFollowsU2" parent="." instance=ExtResource( 17 )]
 modulate = Color( 1, 0.517647, 0.517647, 1 )
 position = Vector2( 4965.85, 148.422 )
 
-[node name="Player_xy_1" parent="." instance=ExtResource( 19 )]
-position = Vector2( 913.534, 1451.32 )
+[node name="Player_xy_1" parent="." instance=ExtResource( 18 )]
+position = Vector2( 10225.5, 1339.32 )
 scale = Vector2( 2.5, 2.5 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Player_xy_1"]
 position = Vector2( -301.814, -160.849 )
 scale = Vector2( 0.4, 0.4 )
-stream = ExtResource( 20 )
+stream = ExtResource( 19 )
 autoplay = true
 
-[node name="enemy" parent="." instance=ExtResource( 21 )]
+[node name="enemy" parent="." instance=ExtResource( 20 )]
 modulate = Color( 1, 0.517647, 0.517647, 1 )
 position = Vector2( 7399.8, 1898.95 )
 speed = 150
 size = Vector2( 5, 5 )
 
-[node name="enemyRay" parent="." instance=ExtResource( 22 )]
+[node name="enemyRay" parent="." instance=ExtResource( 21 )]
 modulate = Color( 1, 0.517647, 0.517647, 1 )
 position = Vector2( 3229.68, 1107.92 )
 
-[node name="RotatingGroupTrap" parent="." instance=ExtResource( 23 )]
+[node name="RotatingGroupTrap" parent="." instance=ExtResource( 22 )]
 position = Vector2( 5952.36, 22.5898 )
 scale = Vector2( 2.3, 2.5 )
 
-[node name="RotatingGroupTrap2" parent="." instance=ExtResource( 23 )]
+[node name="RotatingGroupTrap2" parent="." instance=ExtResource( 22 )]
 position = Vector2( 6820.55, -177.068 )
 scale = Vector2( 2.3, 2.5 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 24 )]
+[node name="KinematicBody2D" parent="." instance=ExtResource( 23 )]
 position = Vector2( 7193.93, 39.4987 )
 scale = Vector2( 0.3, 0.3 )
 
@@ -845,7 +604,7 @@ scale = Vector2( 3.7, 3.2 )
 move_to = Vector2( 0, -300 )
 speed = 7.0
 
-[node name="Treasurefound" parent="." instance=ExtResource( 25 )]
+[node name="Treasurefound" parent="." instance=ExtResource( 24 )]
 modulate = Color( 0.945098, 0.929412, 0.0117647, 1 )
 position = Vector2( 8483.77, -769.639 )
 scale = Vector2( 2.5, 2.5 )
@@ -939,7 +698,7 @@ rotation = -3.14159
 [node name="water_flowing_XY_A" parent="." instance=ExtResource( 11 )]
 position = Vector2( 4090.14, 1570.99 )
 scale = Vector2( 0.5, 4 )
-script = ExtResource( 26 )
+script = ExtResource( 25 )
 
 [node name="water_flowing_XY_A5" parent="." instance=ExtResource( 11 )]
 modulate = Color( 0.964706, 0.584314, 0.584314, 1 )
@@ -1007,10 +766,10 @@ modulate = Color( 0.815686, 0.658824, 0.215686, 0.254902 )
 position = Vector2( 6349.74, 1152.47 )
 scale = Vector2( 0.87, 5 )
 
-[node name="enemyRay2" parent="." instance=ExtResource( 22 )]
+[node name="enemyRay2" parent="." instance=ExtResource( 21 )]
 position = Vector2( 4816.38, -1040.64 )
 
-[node name="enemyRay3" parent="." instance=ExtResource( 22 )]
+[node name="enemyRay3" parent="." instance=ExtResource( 21 )]
 position = Vector2( 4389.26, -1062.46 )
 
 [node name="Moving platform4" parent="." instance=ExtResource( 10 )]
@@ -1038,132 +797,132 @@ position = Vector2( 5428.89, -2024.08 )
 scale = Vector2( 5, 3 )
 move_to = Vector2( -360, 0 )
 
-[node name="Illusion" parent="." instance=ExtResource( 27 )]
+[node name="Illusion" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 9.93282 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion21" parent="." instance=ExtResource( 27 )]
+[node name="Illusion21" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 829.601 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion11" parent="." instance=ExtResource( 27 )]
+[node name="Illusion11" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 402.292 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion6" parent="." instance=ExtResource( 27 )]
+[node name="Illusion6" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 224.728 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion24" parent="." instance=ExtResource( 27 )]
+[node name="Illusion24" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 1044.4 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion15" parent="." instance=ExtResource( 27 )]
+[node name="Illusion15" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 617.087 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion2" parent="." instance=ExtResource( 27 )]
+[node name="Illusion2" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20593.8, 53.1931 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion23" parent="." instance=ExtResource( 27 )]
+[node name="Illusion23" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20593.8, 872.862 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion14" parent="." instance=ExtResource( 27 )]
+[node name="Illusion14" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20593.8, 445.552 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion8" parent="." instance=ExtResource( 27 )]
+[node name="Illusion8" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20593.8, 267.988 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion13" parent="." instance=ExtResource( 27 )]
+[node name="Illusion13" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20593.8, 660.347 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion3" parent="." instance=ExtResource( 27 )]
+[node name="Illusion3" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 96.4534 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion26" parent="." instance=ExtResource( 27 )]
+[node name="Illusion26" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 916.122 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion19" parent="." instance=ExtResource( 27 )]
+[node name="Illusion19" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 488.812 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion10" parent="." instance=ExtResource( 27 )]
+[node name="Illusion10" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 311.248 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion20" parent="." instance=ExtResource( 27 )]
+[node name="Illusion20" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20597.4, 703.607 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion4" parent="." instance=ExtResource( 27 )]
+[node name="Illusion4" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20594.5, 139.412 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion22" parent="." instance=ExtResource( 27 )]
+[node name="Illusion22" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20594.5, 959.081 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion12" parent="." instance=ExtResource( 27 )]
+[node name="Illusion12" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20594.5, 531.771 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion7" parent="." instance=ExtResource( 27 )]
+[node name="Illusion7" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20594.5, 354.208 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion17" parent="." instance=ExtResource( 27 )]
+[node name="Illusion17" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20594.5, 746.567 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion5" parent="." instance=ExtResource( 27 )]
+[node name="Illusion5" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20595.9, 185.235 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion25" parent="." instance=ExtResource( 27 )]
+[node name="Illusion25" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20595.9, 1004.9 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion16" parent="." instance=ExtResource( 27 )]
+[node name="Illusion16" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20595.9, 577.594 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion9" parent="." instance=ExtResource( 27 )]
+[node name="Illusion9" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20595.9, 400.03 )
 scale = Vector2( 4, 3.5 )
 
-[node name="Illusion18" parent="." instance=ExtResource( 27 )]
+[node name="Illusion18" parent="." instance=ExtResource( 26 )]
 modulate = Color( 0.909804, 0.960784, 0.329412, 1 )
 position = Vector2( 20595.9, 792.39 )
 scale = Vector2( 4, 3.5 )
@@ -1364,86 +1123,86 @@ move_to = Vector2( 0, 0 )
 modulate = Color( 0.972549, 0.305882, 0.0156863, 1 )
 position = Vector2( 21195.8, 19.5463 )
 
-[node name="door2" parent="." instance=ExtResource( 28 )]
+[node name="door2" parent="." instance=ExtResource( 27 )]
 position = Vector2( 20074.9, -662.941 )
 scale = Vector2( 2, 5 )
 
-[node name="key2" parent="." instance=ExtResource( 29 )]
+[node name="key2" parent="." instance=ExtResource( 28 )]
 position = Vector2( 20188.5, -2506.77 )
 scale = Vector2( 2, 5 )
 
-[node name="Movingplatform" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform" parent="." instance=ExtResource( 29 )]
 position = Vector2( 17426.2, 2500.47 )
 scale = Vector2( 3, 2 )
 speed = 5
 
-[node name="Movingplatform2" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform2" parent="." instance=ExtResource( 29 )]
 position = Vector2( 18842, 2279.33 )
 scale = Vector2( 2, 2.5 )
 move_to = Vector2( 0, -820 )
 speed = 5
 
-[node name="Rotating_platform" parent="." instance=ExtResource( 24 )]
+[node name="Rotating_platform" parent="." instance=ExtResource( 23 )]
 position = Vector2( 13159.8, 1946.55 )
 
-[node name="rotatingandmoving" parent="." instance=ExtResource( 31 )]
+[node name="rotatingandmoving" parent="." instance=ExtResource( 30 )]
 position = Vector2( 6318.69, 235.85 )
 scale = Vector2( 0.5, 0.4 )
 
-[node name="RotatingGroupTrap3" parent="." instance=ExtResource( 23 )]
+[node name="RotatingGroupTrap3" parent="." instance=ExtResource( 22 )]
 modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 15378.7, -1595.79 )
 scale = Vector2( 2.3, 2.5 )
 
-[node name="RotatingGroupTrap7" parent="." instance=ExtResource( 23 )]
+[node name="RotatingGroupTrap7" parent="." instance=ExtResource( 22 )]
 modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 16476.3, -1792.37 )
 scale = Vector2( 2.3, 2.5 )
 
-[node name="RotatingGroupTrap4" parent="." instance=ExtResource( 23 )]
+[node name="RotatingGroupTrap4" parent="." instance=ExtResource( 22 )]
 modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 14275.9, -1690.61 )
 scale = Vector2( 2.5, 2.3 )
 
-[node name="RotatingGroupTrap5" parent="." instance=ExtResource( 23 )]
+[node name="RotatingGroupTrap5" parent="." instance=ExtResource( 22 )]
 modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 13016.6, -1762.66 )
 scale = Vector2( 3, 2.5 )
 
-[node name="RotatingGroupTrap6" parent="." instance=ExtResource( 23 )]
+[node name="RotatingGroupTrap6" parent="." instance=ExtResource( 22 )]
 position = Vector2( 10162.6, -1488.25 )
 scale = Vector2( 3, 3 )
 rotationalTime = 4.0
 
-[node name="Movingplatform3" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform3" parent="." instance=ExtResource( 29 )]
 modulate = Color( 0.278431, 0.105882, 0.901961, 1 )
 position = Vector2( 9745.85, -1163.11 )
 scale = Vector2( 2.5, 1.6 )
 move_to = Vector2( 0, 0 )
 
-[node name="Movingplatform4" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform4" parent="." instance=ExtResource( 29 )]
 modulate = Color( 0.835294, 0.0588235, 0.768627, 1 )
 position = Vector2( 9344.99, -1229.03 )
 scale = Vector2( 1.8, 1 )
 
-[node name="Movingplatform11" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform11" parent="." instance=ExtResource( 29 )]
 modulate = Color( 0.835294, 0.0588235, 0.768627, 1 )
 position = Vector2( 8975.89, -1347.96 )
 scale = Vector2( 1.8, 1 )
 move_to = Vector2( 0, 0 )
 
-[node name="Movingplatform12" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform12" parent="." instance=ExtResource( 29 )]
 modulate = Color( 0.835294, 0.0588235, 0.768627, 1 )
 position = Vector2( 8805.69, -1477.15 )
 move_to = Vector2( 0, 0 )
 
-[node name="Movingplatform5" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform5" parent="." instance=ExtResource( 29 )]
 modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 12523.1, -1463.82 )
 scale = Vector2( 2, 3 )
 move_to = Vector2( -500, 0 )
 
-[node name="Movingplatform6" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform6" parent="." instance=ExtResource( 29 )]
 position = Vector2( 8155.15, -1734.08 )
 
 [node name="Moving platform8" parent="." instance=ExtResource( 10 )]
@@ -1456,48 +1215,48 @@ position = Vector2( 19534, -984.104 )
 scale = Vector2( 2.5, 3 )
 move_to = Vector2( 0, -400 )
 
-[node name="Movingplatform7" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform7" parent="." instance=ExtResource( 29 )]
 position = Vector2( 11785.7, 1560.82 )
 scale = Vector2( 2, 2 )
 move_to = Vector2( 1000, 0 )
 speed = 10
 
-[node name="Movingplatform8" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform8" parent="." instance=ExtResource( 29 )]
 position = Vector2( 19318.5, -347.284 )
 scale = Vector2( 2, 2 )
 move_to = Vector2( -780, -760 )
 
-[node name="SizeChangeTrap" parent="." instance=ExtResource( 32 )]
+[node name="SizeChangeTrap" parent="." instance=ExtResource( 31 )]
 position = Vector2( 21950.9, 1710.71 )
 scale = Vector2( 1, 1.3 )
 time = 0.89
 
-[node name="SizeChangeTrap2" parent="." instance=ExtResource( 32 )]
+[node name="SizeChangeTrap2" parent="." instance=ExtResource( 31 )]
 position = Vector2( 22241.7, 1714.59 )
 scale = Vector2( 1, 1.3 )
 time = 1.0
 
-[node name="SizeChangeTrap3" parent="." instance=ExtResource( 32 )]
+[node name="SizeChangeTrap3" parent="." instance=ExtResource( 31 )]
 position = Vector2( 22513.1, 1712 )
 scale = Vector2( 1, 1.3 )
 time = 1.3
 
-[node name="SizeChangeTrap4" parent="." instance=ExtResource( 32 )]
+[node name="SizeChangeTrap4" parent="." instance=ExtResource( 31 )]
 position = Vector2( 23397.6, 1700.19 )
 scale = Vector2( 1, 1.3 )
 time = 0.86
 
-[node name="SizeChangeTrap5" parent="." instance=ExtResource( 32 )]
+[node name="SizeChangeTrap5" parent="." instance=ExtResource( 31 )]
 position = Vector2( 22791, 1717.17 )
 scale = Vector2( 1, 1.3 )
 time = 0.95
 
-[node name="SizeChangeTrap6" parent="." instance=ExtResource( 32 )]
+[node name="SizeChangeTrap6" parent="." instance=ExtResource( 31 )]
 position = Vector2( 23098.6, 1699.08 )
 scale = Vector2( 1, 1.3 )
 time = 0.96
 
-[node name="Itemfound" parent="." instance=ExtResource( 33 )]
+[node name="Itemfound" parent="." instance=ExtResource( 32 )]
 position = Vector2( 16285.1, -2691.88 )
 scale = Vector2( 2, 3 )
 
@@ -1506,43 +1265,43 @@ modulate = Color( 0.984314, 0.0156863, 0.0156863, 1 )
 position = Vector2( 9835.63, -2624.04 )
 scale = Vector2( 0.73, 1 )
 
-[node name="Movingplatform9" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform9" parent="." instance=ExtResource( 29 )]
 position = Vector2( 16912.6, -2763.35 )
 move_to = Vector2( 0, -200 )
 
-[node name="enemAI" parent="." instance=ExtResource( 34 )]
+[node name="enemAI" parent="." instance=ExtResource( 33 )]
 position = Vector2( 12984.2, -2523.25 )
 scale = Vector2( 4, 4 )
 
-[node name="Movingplatform10" parent="." instance=ExtResource( 30 )]
+[node name="Movingplatform10" parent="." instance=ExtResource( 29 )]
 position = Vector2( 15673.7, 1156.34 )
 scale = Vector2( 2, 2 )
 move_to = Vector2( 500, 600 )
 
-[node name="Stage3" parent="." instance=ExtResource( 35 )]
+[node name="Stage3" parent="." instance=ExtResource( 34 )]
 visible = false
 position = Vector2( 26244.6, -3077.41 )
 scale = Vector2( 4, 4 )
 
-[node name="EnemyFollowsU3" parent="." instance=ExtResource( 18 )]
+[node name="EnemyFollowsU3" parent="." instance=ExtResource( 17 )]
 position = Vector2( 24648.1, 1908.26 )
 
-[node name="Node2D" parent="." instance=ExtResource( 36 )]
+[node name="Node2D" parent="." instance=ExtResource( 35 )]
 modulate = Color( 0.8, 0.905882, 0.054902, 1 )
 position = Vector2( 17675.9, 314.562 )
 scale = Vector2( 3, 1 )
 
-[node name="Node2D2" parent="." instance=ExtResource( 36 )]
+[node name="Node2D2" parent="." instance=ExtResource( 35 )]
 modulate = Color( 0.443137, 0.968627, 0.117647, 1 )
 position = Vector2( 16353.1, -1922.2 )
 scale = Vector2( 3, 1 )
 
-[node name="Node2D3" parent="." instance=ExtResource( 36 )]
+[node name="Node2D3" parent="." instance=ExtResource( 35 )]
 modulate = Color( 0.615686, 0.929412, 0.054902, 1 )
 position = Vector2( 19335.4, -3822.24 )
 scale = Vector2( 3, 1 )
 
-[node name="Node2D4" parent="." instance=ExtResource( 36 )]
+[node name="Node2D4" parent="." instance=ExtResource( 35 )]
 modulate = Color( 0.0509804, 0.572549, 0.992157, 1 )
 position = Vector2( 19744.3, -1850.05 )
 scale = Vector2( 3, 1 )
@@ -1583,9 +1342,69 @@ position = Vector2( 679.383, -93.8414 )
 scale = Vector2( 10, 10 )
 shape = SubResource( 11 )
 
-[node name="Welcomedoor" parent="." instance=ExtResource( 37 )]
+[node name="Welcomedoor" parent="." instance=ExtResource( 36 )]
 position = Vector2( 318.376, 1113.18 )
 scale = Vector2( 3, 4 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 3650, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+modulate = Color( 1, 0.380392, 0.380392, 1 )
+position = Vector2( 1824, -2752 )
+texture = ExtResource( 37 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_mirroring = Vector2( 3650, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+modulate = Color( 1, 0.380392, 0.380392, 1 )
+position = Vector2( 1776, 2480 )
+texture = ExtResource( 37 )
+
+[node name="ParallaxBackground3" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground3"]
+motion_mirroring = Vector2( 3650, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground3/ParallaxLayer"]
+modulate = Color( 1, 0.380392, 0.380392, 1 )
+position = Vector2( 1792, 784 )
+texture = ExtResource( 37 )
+
+[node name="ParallaxBackground4" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground4"]
+motion_mirroring = Vector2( 3650, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground4/ParallaxLayer"]
+modulate = Color( 1, 0.380392, 0.380392, 1 )
+position = Vector2( 1856, -992 )
+texture = ExtResource( 37 )
+
+[node name="ParallaxBackground5" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground5"]
+motion_mirroring = Vector2( 3650, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground5/ParallaxLayer"]
+modulate = Color( 1, 0.380392, 0.380392, 1 )
+position = Vector2( 1760, 4208 )
+texture = ExtResource( 37 )
+
+[node name="ParallaxBackground6" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground6"]
+motion_mirroring = Vector2( 3650, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground6/ParallaxLayer"]
+modulate = Color( 1, 0.380392, 0.380392, 1 )
+position = Vector2( 1824, -4352 )
+texture = ExtResource( 37 )
 [connection signal="In_door_area" from="door" to="." method="_on_door_In_door_area"]
 [connection signal="key_found" from="key" to="." method="_on_key_key_found"]
 [connection signal="treasure_found" from="Treasurefound" to="." method="_on_Treasurefound_treasure_found"]
